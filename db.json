@@ -1,0 +1,24 @@
+{
+  "entradas": [
+    {
+      "id": 1,
+      "imagen": "/src/assets/img/blog1.jpg",
+      "contenido": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget sem et lectus placerat sagittis vel quis purus. Praesent et dictum massa. Donec fermentum, tortor eget consequat pellentesque, nisl odio hendrerit justo, ac auctor ex leo blandit justo. Integer magna nisi, maximus in pretium suscipit, dapibus vitae lectus. Phasellus in nisl arcu. "
+    },
+    {
+      "id": 2,
+      "imagen": "/src/assets/img/blog2.jpg",
+      "contenido": "Aenean vitae nulla aliquam, dictum augue sed, efficitur massa. Pellentesque mollis nec diam ut dictum. Fusce egestas orci a faucibus consectetur. Vivamus finibus quis velit vel ornare. Aliquam ut odio mauris. Aenean pretium leo vitae dui congue sollicitudin. Donec efficitur lorem eget sapien lacinia, et tristique ligula luctus."
+    },
+    {
+      "id": 3,
+      "imagen": "/src/assets/img/blog3.jpg",
+      "contenido": "Vivamus a sapien a metus efficitur consequat sed at sem. Mauris vel mollis mi. Integer vestibulum tincidunt mi, sed feugiat ligula efficitur id. Maecenas vitae metus arcu. Aenean vitae elit urna. Proin et elit scelerisque tortor malesuada placerat ut et nunc."
+    },
+    {
+      "id": 4,
+      "imagen": "/src/assets/img/blog4.jpg",
+      "contenido": "Nulla facilisi. Integer feugiat, enim et hendrerit semper, augue nibh hendrerit dolor, eget varius purus odio non eros. Maecenas semper metus vitae massa pharetra finibus. Morbi cursus vestibulum sapien et rhoncus."
+    }
+  ]
+}
