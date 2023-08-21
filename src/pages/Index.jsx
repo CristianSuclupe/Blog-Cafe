@@ -1,13 +1,26 @@
-import { useLoaderData } from "react-router-dom";
+import { useState, useEffect } from "react";
 import EntradaBlog from "../components/EntradaBlog";
-import { obtenerEntradas } from "../data/entradas";
+import Aside from "../components/Aside";
+import { obtenerEntradas, obtenerCursos } from "../data/entradas";
 
-export const loader = async () => {
-  const entradas = await obtenerEntradas();
-  return entradas;
-};
 const Index = () => {
-  const entradas = useLoaderData();
+  const [entradas, setEntradas] = useState([]);
+  const [cursos, setCursos] = useState([]);
+
+  useEffect(() => {
+    const obtenerEntradasyCursos = async () => {
+      try {
+        const entradas = await obtenerEntradas();
+        const cursos = await obtenerCursos();
+        setEntradas(entradas);
+        setCursos(cursos);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    obtenerEntradasyCursos();
+  }, []);
+
   return (
     <div className="contenedor contenido-principal">
       <main className="blog">
@@ -16,9 +29,7 @@ const Index = () => {
           <EntradaBlog entrada={entrada} key={entrada.id} />
         ))}
       </main>
-      <aside className="sidebar">
-        <h3>Nuestros Cursos y Talleres</h3>
-      </aside>
+      <Aside cursos={cursos} />
     </div>
   );
 };

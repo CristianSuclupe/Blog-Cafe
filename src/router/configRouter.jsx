@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/Layout";
-import Index, { loader as entradasLoader } from "../pages/Index";
+import Index from "../pages/Index";
 import Nosotros from "../pages/Nosotros";
 import Cursos from "../pages/Cursos";
 import Contacto from "../pages/Contacto";
@@ -14,7 +14,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Index />,
-        loader: entradasLoader,
       },
       {
         path: NOSOTROS,
