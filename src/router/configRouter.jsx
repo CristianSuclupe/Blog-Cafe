@@ -4,7 +4,8 @@ import Index from "../pages/Index";
 import Nosotros from "../pages/Nosotros";
 import Cursos from "../pages/Cursos";
 import Contacto from "../pages/Contacto";
-import { HOME, NOSOTROS, CONTACTO, CURSOS } from "./routes";
+import Entrada from "../pages/Entrada";
+import { HOME, NOSOTROS, CONTACTO, CURSOS, ENTRADA } from "./routes";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: CONTACTO,
         element: <Contacto />,
+      },
+      {
+        path: ENTRADA,
+        element: <Entrada />,
       },
     ],
   },
