@@ -12,7 +12,9 @@ const Curso = ({ curso }) => {
       <p className="widget-curso__label">
         Cupo: <span className="widget-curso__info">{cupo}</span>
       </p>
-      <a className="boton boton--secundario">Más información</a>
+      <a className="boton boton--secundario">
+        Más información sobre nuestros cursos
+      </a>
     </li>
   );
 };

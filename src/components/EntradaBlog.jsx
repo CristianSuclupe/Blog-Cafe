@@ -6,7 +6,10 @@ const EntradaBlog = ({ entrada }) => {
   return (
     <article className="entrada">
       <div className="entrada__imagen">
-        <img src={imagen} alt="imagen blog" />
+        <picture>
+          <source srcSet={imagen.replace("jpg", "webp")} type="image/webp" />
+          <img loading="lazy" src={imagen} alt="imagen blog" />
+        </picture>
       </div>
       <div className="entrada__contenido">
         <h4 className="no-margin">{titulo}</h4>
